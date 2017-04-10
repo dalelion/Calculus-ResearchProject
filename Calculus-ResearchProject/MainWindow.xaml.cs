@@ -10,19 +10,29 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Calculus_ResearchProject
-{
+namespace Calculus_ResearchProject {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MenuWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
+    public partial class MainWindow : Window {
+        public MainWindow() {
             InitializeComponent();
+        }
+
+        private void B_TaylorSeries_Click( object sender, RoutedEventArgs e ) {
+            new TaylorWindow().Show();
+            this.Close();
+        }
+
+        private void B_Classic_Click( object sender, RoutedEventArgs e ) {
+            new ClassicWindow().Show();
+            this.Close();
+        }
+
+        private void B_Parser_Click( object sender, RoutedEventArgs e ) {
+
         }
     }
 }

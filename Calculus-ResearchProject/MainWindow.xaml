@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculus_ResearchProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Advanced Calculator - Menu Screen" Height="425" Width="400">
     <Grid>
-        
+        <Label x:Name="L_MenuTitle" Content="Advanced Calculator" HorizontalAlignment="Left" Margin="3,15,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="74" Width="382" FontFamily="Segoe UI Black" FontSize="36"/>
+        <Button x:Name="B_TaylorSeries" Content="Taylor Series" HorizontalAlignment="Left" Margin="60,119,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="50" Width="275" FontFamily="Segoe UI Black" FontSize="30" Click="B_TaylorSeries_Click"/>
+        <Button x:Name="B_Classic" Content="Classic Calculator" HorizontalAlignment="Left" Margin="60,211,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="50" Width="275" FontFamily="Segoe UI Black" FontSize="30" Click="B_Classic_Click"/>
+        <Button x:Name="B_Parser" Content="Expression Parser" HorizontalAlignment="Left" Margin="60,304,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="50" Width="275" FontFamily="Segoe UI Black" FontSize="30" Click="B_Parser_Click"/>
     </Grid>
 </Window>
